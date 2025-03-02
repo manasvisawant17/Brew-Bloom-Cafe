@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Account Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: burlywood;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #8B4513;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #8B4513;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #654321;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>☕ Café Account Registration</h1>
+        <form action="#" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="favorite-coffee">Favorite Coffee</label>
+            <select id="favorite-coffee" name="favorite-coffee" required>
+                <option value="">Select an option</option>
+                <option value="espresso">Espresso</option>
+                <option value="latte">Latte</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="mocha">Mocha</option>
+                <option value="americano">Americano</option>
+            </select>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
